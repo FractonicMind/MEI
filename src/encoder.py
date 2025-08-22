@@ -1,26 +1,38 @@
-# A simple MIE Encoder
-# Encodes a string into MIE format (0s and expressions that equal 1)
-# NOTE: This is a basic example and uses a limited set of expressions for '1'
+# MIE Encoder
+# Encodes a string of text into the MIE format.
 
-def to_binary(text):
-    """Converts text to an 8-bit binary string."""
+import random
+
+def to_binary_string(text: str) -> str:
+    """Converts a string of text into its 8-bit binary representation."""
     return ''.join(format(ord(char), '08b') for char in text)
 
-def encode_mie(text):
-    """Encodes a string into a list of MIE expressions."""
-    binary_string = to_binary(text)
-    mie_code = []
+def get_random_one_expression() -> str:
+    """Returns a random mathematical expression that equals 1."""
+    expressions = [
+        '(1*1)', '(2-1)', '(7/7)', '(9-8)', '(1**9)', '(cos(0))', '(0!+0)'
+    ]
+    return random.choice(expressions)
+
+def encode_mie(text: str) -> str:
+    """
+    Encodes a string of text into a space-separated MIE string.
+    '0' is represented by '0'.
+    '1' is represented by a random mathematical identity for '1'.
+    """
+    binary_string = to_binary_string(text)
+    mie_expressions = []
 
     for bit in binary_string:
         if bit == '0':
-            mie_code.append('0')
+            mie_expressions.append('0')
         else:
-            # For simplicity, we use a single expression for '1'
-            mie_code.append('(1+1-1)') 
-    return ' '.join(mie_code)
+            mie_expressions.append(get_random_one_expression())
+
+    return ' '.join(mie_expressions)
 
 if __name__ == '__main__':
-    message = "Lev"
-    mie_message = encode_mie(message)
-    print(f"Original Text: {message}")
-    print(f"MIE Encoded: {mie_message}")
+    message = "MIE"
+    encoded_message = encode_mie(message)
+    print(f"Original message: {message}")
+    print(f"Encoded MIE string: {encoded_message}")
