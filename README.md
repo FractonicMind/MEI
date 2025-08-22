@@ -1,26 +1,29 @@
-Mathematical Identity Encoding (MIE)
+# Mathematical Identity Encoding (MIE)
 
 A novel steganographic method for hiding information in plain sight.
 
-The Principle
+---
+
+## The Principle
 
 The core of MIE is to encode binary data within a grid of mathematical expressions. The method is based on a simple, elegant rule:
 
-    A binary '0' is represented by the digit 0.
-
-    A binary '1' is represented by any mathematical expression that resolves precisely to the value of 1.
+- A binary **'0'** is represented by the digit `0`.
+- A binary **'1'** is represented by any mathematical expression that resolves precisely to the value of `1`.
 
 This approach transforms a secret message into a format that appears to be a mathematical exercise or abstract notation.
 
-How to Use the Code
+---
 
-The src/ folder contains a simple Python encoder and decoder to demonstrate the concept.
+## How to Use the Code
 
-Encoding a Message
+The `src/` folder contains a simple Python **encoder** and **decoder** to demonstrate the concept.
 
-To encode a message, you can use the encoder.py script. It will convert a string of text into a sequence of MIE expressions.
-Bash
+### Encoding a Message
 
+To encode a message, you can use the `encoder.py` script. It will convert a string of text into a sequence of MIE expressions.
+
+```bash
 python3 src/encoder.py
 
 Decoding a Message
@@ -46,7 +49,3 @@ This project is a proof of concept for several applications, including:
     Creative Authentication: A unique form of CAPTCHA.
 
     Educational Tools: A gamified way to teach mathematical identities.
-
-The Full Paper
-
-For a complete analysis of MIE's properties, ethics, and potential, please refer to the full academic paper, MIE_Paper.md, which is also contained in this repository.
