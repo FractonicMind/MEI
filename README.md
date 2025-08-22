@@ -10,22 +10,36 @@ The core of MIE is to encode binary data within a grid of mathematical expressio
 
     A binary '1' is represented by any mathematical expression that resolves precisely to the value of one.
 
-This approach allows a secret message to be disguised as an innocuous list of mathematical exercises.
+This approach transforms a secret message into a format that appears to be a mathematical exercise or abstract notation.
 
-The Evolution: From a Torch to a Lighthouse
+The Evolution: A Beacon of Mathematical Truth
 
-The initial concept, a "Torch," used simple fractional sums to represent binary '1's. While functional, it was often imprecise and limited in its variety of expressions.
+The final method, the "Lighthouse," is built on the rigorous principle of mathematical identity. It is a refined system that uses a wide spectrum of expressions (e.g., (70), (∣−1∣), or (0)) to achieve absolute precision and reliability in the encoding.
 
-The final method, the "Lighthouse," is a refined system that uses a wide spectrum of mathematical identities (e.g., 
-(70)
+How to Use the Code
 
-,
-(∣−1∣)
+The src/ folder contains a simple Python encoder and decoder to demonstrate the concept.
 
-,
-(0!)
+Encoding a Message
 
- ) to achieve absolute precision and elegance. It transforms the encoding from a clever trick into a robust and intellectually beautiful beacon of information.
+To encode a message, you can use the encoder.py script. It will convert a string of text into a sequence of MIE expressions.
+Bash
+
+python3 src/encoder.py
+
+Decoding a Message
+
+The decoder.py script can be used to convert an MIE message back into a readable string.
+Bash
+
+python3 src/decoder.py
+
+Running the Tests
+
+The tests/ folder contains a full suite of unit tests to verify the functionality of the encoder and decoder. To run the tests, use the following command from the root of the repository:
+Bash
+
+python3 -m unittest discover tests/
 
 Potential Applications
 
@@ -39,4 +53,4 @@ This project is a proof of concept for several applications, including:
 
 The Full Paper
 
-For a complete analysis of MIE's properties, ethics, and potential, please refer to the full paper, MIE_Paper.md, which is also contained in this repository.
+For a complete analysis of MIE's properties, ethics, and potential, please refer to the full academic paper, MIE_Paper.md, which is also contained in this repository.
