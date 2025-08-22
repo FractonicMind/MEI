@@ -8,13 +8,9 @@ The core of MIE is to encode binary data within a grid of mathematical expressio
 
     A binary '0' is represented by the digit 0.
 
-    A binary '1' is represented by any mathematical expression that resolves precisely to the value of one.
+    A binary '1' is represented by any mathematical expression that resolves precisely to the value of 1.
 
 This approach transforms a secret message into a format that appears to be a mathematical exercise or abstract notation.
-
-The Evolution: A Beacon of Mathematical Truth
-
-The final method, the "Lighthouse," is built on the rigorous principle of mathematical identity. It is a refined system that uses a wide spectrum of expressions (e.g., (70), (∣−1∣), or (0)) to achieve absolute precision and reliability in the encoding.
 
 How to Use the Code
 
