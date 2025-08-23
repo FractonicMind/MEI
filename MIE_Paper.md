@@ -25,27 +25,35 @@ To encode a message, you can use the `encoder.py` script. It will convert a stri
 
 ```bash
 python3 src/encoder.py
+````
 
-Decoding a Message
+### Decoding a Message
 
-The decoder.py script can be used to convert an MIE message back into a readable string.
-Bash
+The `decoder.py` script can be used to convert an MIE message back into a readable string.
 
+```bash
 python3 src/decoder.py
+```
 
-Running the Tests
+-----
 
-The tests/ folder contains a full suite of unit tests to verify the functionality of the encoder and decoder. To run the tests, use the following command from the root of the repository:
-Bash
+## Running the Tests
 
+The `tests/` folder contains a full suite of unit tests to verify the functionality of the encoder and decoder. To run the tests, use the following command from the root of the repository:
+
+```bash
 python3 -m unittest discover tests/
+```
 
-Potential Applications
+-----
+
+## Potential Applications
 
 This project is a proof of concept for several applications, including:
 
-    Digital Watermarking: Embedding a hidden copyright or signature in a document.
+  - **Digital Watermarking:** Embedding a hidden copyright or signature in a document.
+  - **Creative Authentication:** A unique form of CAPTCHA.
+  - **Educational Tools:** A gamified way to teach mathematical identities.
 
-    Creative Authentication: A unique form of CAPTCHA.
+-----
 
-    Educational Tools: A gamified way to teach mathematical identities.
