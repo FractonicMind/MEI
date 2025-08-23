@@ -52,4 +52,10 @@ Fortunately, these risks can be mitigated by combining MIE with standard securit
 
     Develop a Detection Tool: A key part of the responsible release of this method is the simultaneous publication of a tool that can detect MIE-encoded data. Such a tool would scan files or web pages for the unique statistical signature of MIE—a high frequency of zeros and expressions that resolve to one—and flag it as suspicious.
 
+    ## The Full Paper
+
+For a complete analysis of MIE's properties, ethics, and potential, please refer to the full academic paper, available here:
+
+    [Read the MIE Academic Paper](MIE_Academic_Paper.md)
+
 By implementing these prevention methods, the MIE system becomes an academic and creative tool with a built-in defense against its potential for misuse.
