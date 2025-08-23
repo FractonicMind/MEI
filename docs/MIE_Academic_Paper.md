@@ -1,6 +1,4 @@
-Mathematical Identity Encoding: A Steganographic Method
-
-Author: Lev Goukassian
+### Mathematical Identity Encoding: A Steganographic Method
 
 Abstract: This paper introduces a novel method for steganography. The proposed system, called Mathematical Identity Encoding (MIE), embeds binary data within a grid of mathematical expressions. In this system, a binary '0' is represented by a literal zero, while a binary '1' is represented by any mathematical expression that resolves precisely to the value of one. This approach transforms a secret message into a format that appears to be a mathematical exercise or abstract notation. We will define the encoding rules, analyze its formal properties, and explore its potential applications in digital watermarking, user authentication, and computational education.
 
