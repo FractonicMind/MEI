@@ -56,6 +56,6 @@ Fortunately, these risks can be mitigated by combining MIE with standard securit
 
 For a complete analysis of MIE's properties, ethics, and potential, please refer to the full academic paper, available here:
 
-    [Read the MIE Academic Paper](docs/MIE_Academic_Paper.md)
+**[Read the MIE Academic Paper](docs/MIE_Academic_Paper.md)**
 
 By implementing these prevention methods, the MIE system becomes an academic and creative tool with a built-in defense against its potential for misuse.
